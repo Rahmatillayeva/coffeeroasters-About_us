@@ -1,0 +1,117 @@
+main {
+  .first-section {
+    display: flex;
+    padding: 0 80px;
+    align-items: center;
+    margin-top: 170px;
+    margin-bottom: 220px;
+
+    &-img {
+      border-radius: 8px;
+    }
+
+    &-text {
+      margin-left: 125px;
+
+      h2 {
+        font-family: var(--text-heady-font-family);
+        font-weight: var(--text-heady-font-weight);
+        color: #333D4B;
+        font-size: 40px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-family: var(--text-p-font-family);
+        font-weight: var(--text-p-font-weight);
+        font-size: 16px;
+        color: #333D4B;
+        max-width: 540px;
+      }
+    }
+  }
+
+
+  .second-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333D4B;
+    border-radius: 8px;
+    padding: 0 80px;
+    margin-bottom: 220px;
+
+    &-text {
+      h2 {
+        font-family: var(--text-heady-font-family);
+        font-weight: var(--text-heady-font-weight);
+        font-size: 40px;
+        color: var(--text-color);
+        margin-bottom: 30px;
+      }
+
+      p {
+        font-family: var(--text-p-font-family);
+        font-weight: var(--text-p-font-weight);
+        color: var(--text-color);
+        font-size: 16px;
+        width: 540px;
+      }
+    }
+
+    &-img {
+      border-radius: 8px;
+      position: relative;
+      bottom: 100px;
+
+    }
+  }
+
+
+  .third-section {
+    padding: 0 80px;
+
+    h4 {
+      font-family: var(--text-heady-font-family);
+      font-weight: var(--text-heady-font-weight);
+      font-size: 24px;
+      color: #83888F;
+      margin-bottom: 50px;
+    }
+
+    &-list {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+
+      h3 {
+        padding: 20px 0;
+        font-family: var(--text-heady-font-family);
+        font-weight: var(--text-heady-font-weight);
+        font-size: 32px;
+        color: #333D4B;
+      }
+
+      p {
+        padding-bottom: 10px;
+        font-family: var(--text-p-font-family);
+        font-weight: var(--text-p-font-weight);
+        font-size: 16px;
+        color: #333D4B;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1220px) {
+  .second-section {
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    text-align: center;
+
+    &-text {
+      padding-bottom: 100px;
+    }
+
+  }
+}
